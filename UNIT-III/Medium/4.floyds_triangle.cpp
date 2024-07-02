@@ -34,3 +34,29 @@ int main() {
     FloydsTriangle triangle(rows);
     return 0;
 }
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int row = 5;
+    int count = 1; // Initializing count to 1.
+
+    // The outer loop maintains the number of rows.
+    for (int i = 1; i <= row; i++) {
+        // The inner loop maintains the number of columns.
+        for (int j = 1; j <= i; j++) {
+            // To print the numbers
+            cout << count << " ";
+
+            // To keep increasing the count of numbers
+            count += 1;
+        }
+
+        // To proceed to the next line.
+        cout << "\n";
+    }
+
+    return 0;
+}
